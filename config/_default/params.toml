@@ -11,13 +11,13 @@ autoSwitchAppearance = true
 
 enableA11y = false
 enableSearch = true
-enableCodeCopy = false
+enableCodeCopy = true
 enableStructuredBreadcrumbs = false
 # enableStyledScrollbar = true # disable to use native scrollbar style (defaults to true)
 
 replyByEmail = false
 
-# mainSections = ["section1", "section2"]
+mainSections = ["posts"]
 # robots = ""
 
 disableImageOptimization = false
@@ -46,18 +46,18 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [footer]
   showMenu = true
   showCopyright = true
-  showThemeAttribution = true
+  showThemeAttribution = false
   showAppearanceSwitcher = true
   showScrollToTop = true
 
 [homepage]
   layout = "profile" # valid options: page, profile, hero, card, background, custom
   #homepageImage = "IMAGE.jpg" # used in: hero, and card
-  showRecent = false
-  showRecentItems = 5
-  showMoreLink = false
+  showRecent = true
+  showRecentItems = 4
+  showMoreLink = true
   showMoreLinkDest = "/posts/"
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = false # only used when layout equals background
   disableHeroImageFilter = false # only used when layout equals hero
@@ -101,16 +101,16 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
-  showSummary = false
+  showSummary = true
   showViews = false
   showLikes = false
   showTableOfContents = false
-  showCards = false
+  showCards = true
   orderByWeight = false
-  groupByYear = true
-  cardView = false
+  groupByYear = false
+  cardView = true
   cardViewScreenWidth = false
-  constrainItemsWidth = false
+  constrainItemsWidth = true
 
 [sitemap]
   excludedKinds = ["taxonomy", "term"]

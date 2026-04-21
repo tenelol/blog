@@ -9,13 +9,13 @@ title = "Yuki Matsuda | Portfolio & Blog"
   isoCode = "ja"
   rtl = false
   dateFormat = "2006-01-02"
-  description = "GitHub の個人開発と Zenn の技術記事をひとつの導線で読める、Yuki Matsuda のポートフォリオ兼ブログ"
+  description = "学生バックエンドエンジニア Yuki Matsuda の、個人開発・公開メモ・Zenn 技術記事をまとめたポートフォリオ兼ブログ"
 
 [params.author]
   name = "Yuki Matsuda"
   image = "images/yuki-matsuda.jpeg"
-  headline = "NixOS、個人開発、運用メモを仕事につながる形で整理するポートフォリオ兼ブログ"
-  bio = "INIAD / Tokyo。GitHub の個人開発と Zenn の技術記事を軸に、作ったものと学んだことを継続的に残しています。"
+  headline = "学生バックエンドエンジニア。個人開発、公開メモ、技術記事を継続的に積み上げるポートフォリオ兼ブログ"
+  bio = "INIAD / Tokyo。バックエンド寄りの個人開発と運用メモを続けています。技術記事は Zenn、AI を使った試行や個人的な公開メモはこのサイトに整理しています。"
   links = [
     { globe = "https://tenelol.dev" },
     { github = "https://github.com/tenelol" },

@@ -17,7 +17,7 @@ enableStructuredBreadcrumbs = false
 
 replyByEmail = false
 
-mainSections = ["posts"]
+mainSections = ["works", "posts"]
 # robots = ""
 
 disableImageOptimization = false
@@ -27,7 +27,7 @@ disableTextInHeader = false
 
 # defaultBackgroundImage = "IMAGE.jpg" # used as default for background images
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
-# defaultSocialImage = "/android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
+defaultSocialImage = "/images/sakura-night.jpeg" # used as default for social media sharing (Open Graph and Twitter)
 hotlinkFeatureImage = false
 # imagePosition = "50% 50%"
 
@@ -51,11 +51,11 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showScrollToTop = true
 
 [homepage]
-  layout = "profile" # valid options: page, profile, hero, card, background, custom
-  #homepageImage = "IMAGE.jpg" # used in: hero, and card
+  layout = "hero" # valid options: page, profile, hero, card, background, custom
+  homepageImage = "images/sakura-night.jpeg" # used in: hero, and card
   showRecent = true
-  showRecentItems = 4
-  showMoreLink = true
+  showRecentItems = 6
+  showMoreLink = false
   showMoreLinkDest = "/posts/"
   cardView = true
   cardViewScreenWidth = false

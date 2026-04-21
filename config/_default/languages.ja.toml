@@ -9,9 +9,9 @@ title = "Portfolio & Blog"
   isoCode = "ja"
   rtl = false
   dateFormat = "2006-01-02"
-  description = "ポートフォリオとブログをまとめた個人サイト"
+  description = "制作実績とブログをひとつにまとめた、tener のポートフォリオサイト"
 
 [params.author]
   name = "tener"
-  headline = "制作実績と技術メモをまとめる個人サイト"
-  bio = "作ったもの、考えていること、日々の実装メモを Hugo x Blowfish で公開しています。"
+  headline = "制作実績、個人開発、技術メモを同じ流れで読めるポートフォリオ"
+  bio = "夜桜の写真をキービジュアルに、制作物と文章を落ち着いたトーンでまとめています。"

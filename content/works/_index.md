@@ -2,13 +2,13 @@
 title = "Works"
 date = 2026-04-18T00:00:00+09:00
 draft = false
-description = "GitHub に公開している個人プロジェクトと、このサイト自体の設計をまとめたポートフォリオセクション。"
+description = "GitHub に公開している個人プロジェクトを、目的・技術・判断が伝わる形でまとめたポートフォリオセクション。"
 +++
 
-GitHub に公開している個人プロジェクトと、このサイト自体の実装を新しい順にまとめています。設計、実装、運用の判断が見えるものを優先して載せています。
+GitHub に公開している個人プロジェクトを、単なるリンク集ではなく、何を作り、なぜ作り、どこに自分らしさがあるかまで分かる形でまとめています。小さくても、設計や運用の判断が見えるものを優先しています。
 
-## Featured GitHub
+## How To Read
 
-- [Nixar](https://github.com/tenelol/Nixar): Minimal Go web framework + Nix flake template
-- [iniad-gdrive](https://github.com/tenelol/iniad-gdrive): INIAD-oriented Google Drive import wrapper for `gdrive` / `mygdrive`
-- [.dotfiles](https://github.com/tenelol/.dotfiles): `denix` ベースの個人環境管理
+- `Overview`: 何を作ったか
+- `Focus`: どこに判断や工夫があるか
+- `Stack`: どの技術をどう使ったか

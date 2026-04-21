@@ -7,6 +7,8 @@ summary = "夜桜の写真をキービジュアルに、制作実績とブログ
 tags = ["Hugo", "Portfolio", "Design"]
 categories = ["Works"]
 weight = 10
+stack = ["Hugo", "Blowfish", "Tailwind CSS", "GitHub Actions"]
+highlight = "落ち着いたトーンは残しつつ、作品・文章・プロフィールをインターン向けの導線に整理した。"
 +++
 
 このサイト自体を、`Works` セクションのひとつの制作物として掲載しています。
@@ -28,3 +30,4 @@ weight = 10
 - Hugo
 - Blowfish
 - GitHub Actions
+- Tailwind CSS

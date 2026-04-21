@@ -2,23 +2,31 @@
 title = "About"
 date = 2026-04-18T00:00:00+09:00
 draft = false
-description = "プロフィールと制作のスタンス、このサイトの設計意図をまとめたページ。"
+description = "プロフィール、外部リンク、よく扱うテーマ、このサイトの使い分けをまとめたページ。"
 +++
 
-制作物と文章を、同じ温度感で見せるための個人サイトです。
+GitHub の個人開発と Zenn の技術記事を、同じ温度感で見せるための個人サイトです。
 
-## What I Do
+## Profile
 
-- Web サイトや個人プロダクトの設計と実装
-- 継続的に育てられる情報設計
-- 実装だけで終わらない運用しやすい構成づくり
+- `Yuki Matsuda`
+- `INIAD / Tokyo`
+- NixOS、個人開発、静的サイト運用まわりを継続的に試しています。
 
-## Approach
+## Links
 
-- まず見た目で雰囲気を伝える
-- 次に構造で読みやすさを担保する
-- 最後に更新しやすい仕組みに落とす
+- [Website](https://tenelol.dev)
+- [GitHub](https://github.com/tenelol)
+- [Zenn](https://zenn.dev/tenelol)
+- [Qiita](https://qiita.com/tenelol)
+- [X](https://x.com/tenelol)
+
+## Focus
+
+- NixOS と Nix を使った再現性の高い運用
+- Cloudflare や Tailscale を使った個人サーバー公開
+- 小さなツール、Web フレームワーク、ポートフォリオの継続改善
 
 ## This Site
 
-このサイトは `Hugo` と `Blowfish` を使い、`Works` と `Posts` を同じデザイン言語で見せるために構成しています。トップには手元の写真をキービジュアルとして使い、個人サイトとしての空気感を先に伝える設計にしています。
+このサイトは `Works` と `Posts` を役割で分けています。`Works` では GitHub 上の制作物や実装物を見せ、`Posts` ではこのサイト内の記事と Zenn の技術記事をまとめます。背景の写真で印象を作りつつ、中身は仕事につながる情報へ寄せています。

@@ -2,16 +2,22 @@ disabled = false
 languageCode = "ja-JP"
 languageName = "日本語"
 weight = 1
-title = "Portfolio & Blog"
+title = "Yuki Matsuda | Portfolio & Blog"
 
 [params]
   displayName = "JA"
   isoCode = "ja"
   rtl = false
   dateFormat = "2006-01-02"
-  description = "制作実績とブログをひとつにまとめた、tener のポートフォリオサイト"
+  description = "GitHub の個人開発と Zenn の技術記事をひとつの導線で読める、Yuki Matsuda のポートフォリオ兼ブログ"
 
 [params.author]
-  name = "tener"
-  headline = "制作実績、個人開発、技術メモを同じ流れで読めるポートフォリオ"
-  bio = "夜桜の写真をキービジュアルに、制作物と文章を落ち着いたトーンでまとめています。"
+  name = "Yuki Matsuda"
+  image = "images/yuki-matsuda.jpeg"
+  headline = "NixOS、個人開発、運用メモを仕事につながる形で整理するポートフォリオ兼ブログ"
+  bio = "INIAD / Tokyo。GitHub の個人開発と Zenn の技術記事を軸に、作ったものと学んだことを継続的に残しています。"
+  links = [
+    { globe = "https://tenelol.dev" },
+    { github = "https://github.com/tenelol" },
+    { x-twitter = "https://x.com/tenelol" },
+  ]

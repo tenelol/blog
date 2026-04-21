@@ -5,9 +5,10 @@ draft = false
 description = "GitHub に公開している個人プロジェクトと、このサイト自体の設計をまとめたポートフォリオセクション。"
 +++
 
-GitHub に公開している個人プロジェクトと、このサイト自体の実装をまとめています。設計、実装、運用の判断が見えるものを優先しています。
+GitHub に公開している個人プロジェクトと、このサイト自体の実装を新しい順にまとめています。設計、実装、運用の判断が見えるものを優先して載せています。
 
-## How To Read
+## Featured GitHub
 
-- 各カードでは、概要、使った技術、短い説明を確認できます。
-- 詳細ページでは、制作意図や工夫した点を見られます。
+- [Nixar](https://github.com/tenelol/Nixar): Minimal Go web framework + Nix flake template
+- [iniad-gdrive](https://github.com/tenelol/iniad-gdrive): INIAD-oriented Google Drive import wrapper for `gdrive` / `mygdrive`
+- [.dotfiles](https://github.com/tenelol/.dotfiles): `denix` ベースの個人環境管理

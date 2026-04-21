@@ -3,6 +3,7 @@ title = "Nixar"
 date = 2026-04-21T14:20:00+09:00
 draft = false
 summary = "Minimal Go web framework + Nix flake template"
+featureimage = "https://opengraph.githubassets.com/ce1a09a5a63dd9739af23d7847c233a96ff37bbfb272964aff5a276184658c6c/tenelol/Nixar"
 tags = ["Go", "Nix", "Framework"]
 categories = ["Works"]
 +++

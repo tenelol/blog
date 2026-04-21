@@ -26,7 +26,7 @@ disableTextInHeader = false
 # backgroundImageWidth = 1200
 
 defaultBackgroundImage = "images/sakura-night.jpeg" # used as default for background images
-# defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
+defaultFeaturedImage = "/images/sakura-night.jpeg" # used as default for featured images in all articles
 defaultSocialImage = "/images/sakura-night.jpeg" # used as default for social media sharing (Open Graph and Twitter)
 hotlinkFeatureImage = false
 # imagePosition = "50% 50%"

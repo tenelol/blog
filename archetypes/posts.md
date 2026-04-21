@@ -5,5 +5,13 @@ title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 description = ""
 summary = ""
 tags = []
-categories = []
+categories = ["Blog"]
 +++
+
+## 背景
+
+## やったこと
+
+## 気づき
+
+## 次にやること

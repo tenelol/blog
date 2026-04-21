@@ -1,88 +1,38 @@
 {{ define "main" }}
   {{ .Scratch.Set "scope" "list" }}
-  {{ $pages := sort (where site.RegularPages "Section" "works") "Date" "desc" }}
-  {{ $disableImageOptimization := site.Store.Get "disableImageOptimization" }}
+  {{ $pages := where site.RegularPages "Section" "works" }}
 
-  <article class="portfolio-works-page">
-    <header class="portfolio-works-header">
-      <div>
-        <p class="portfolio-section__eyebrow">Portfolio</p>
-        <h1 class="portfolio-works-header__title">{{ .Title }}</h1>
-      </div>
-      <div class="prose dark:prose-invert max-w-3xl">
-        {{ .Content }}
-      </div>
-    </header>
+  <header>
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      {{ partial "article-meta/list.html" (dict "context" . "scope" "single") }}
+    </div>
+  </header>
 
-    {{ if gt (len $pages) 0 }}
-      <section class="portfolio-work-list">
-        {{ range $pages }}
-          {{ $page := .Page }}
-          {{ $featured := "" }}
-          {{ $featuredURL := "" }}
-          {{ with $page.Params.featureimage }}
-            {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
-              {{ if site.Params.hotlinkFeatureImage }}
-                {{ $featuredURL = . }}
-              {{ else }}
-                {{ $featured = resources.GetRemote . }}
-              {{ end }}
-            {{ else }}
-              {{ $featured = resources.Get . }}
-            {{ end }}
-          {{ end }}
-          {{ if not (or $featured $featuredURL) }}
-            {{ $images := $page.Resources.ByType "image" }}
-            {{ range slice "*feature*" "*cover*" "*thumbnail*" }}
-              {{ if not $featured }}{{ $featured = $images.GetMatch . }}{{ end }}
-            {{ end }}
-          {{ end }}
-          {{ if and $featured (not $featuredURL) }}
-            {{ $featuredURL = $featured.RelPermalink }}
-            {{ if not (or $disableImageOptimization (eq $featured.MediaType.SubType "svg")) }}
-              {{ $featuredURL = ($featured.Resize "960x").RelPermalink }}
-            {{ end }}
-          {{ end }}
-          <article class="portfolio-work-card">
-            {{ with $featuredURL }}
-              <a class="portfolio-work-card__media" href="{{ $page.RelPermalink }}">
-                <img src="{{ . }}" alt="" loading="lazy" decoding="async">
-              </a>
-            {{ end }}
-            <div class="portfolio-work-card__body">
-              <div class="portfolio-work-card__topline">
-                <div class="portfolio-chip-row portfolio-chip-row--compact">
-                  {{ range first 4 ($page.Params.stack | default $page.Params.tags) }}
-                    <span class="portfolio-chip">{{ . }}</span>
-                  {{ end }}
-                </div>
-                <span class="portfolio-work-card__date">{{ $page.Date.Format "2006-01" }}</span>
-              </div>
-              <h2 class="portfolio-work-card__title">
-                <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
-              </h2>
-              <p class="portfolio-work-card__summary">{{ $page.Summary | plainify }}</p>
-              {{ with $page.Params.highlight }}
-                <p class="portfolio-work-card__highlight">{{ . }}</p>
-              {{ end }}
-              <div class="portfolio-work-card__actions">
-                <a class="portfolio-button portfolio-button--primary" href="{{ $page.RelPermalink }}">詳細を見る</a>
-                {{ with $page.Params.repo }}
-                  <a class="portfolio-button portfolio-button--ghost" href="{{ . }}" target="_blank" rel="noopener noreferrer">GitHub</a>
-                {{ end }}
-              </div>
-            </div>
-          </article>
+  <section class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row mb-10">
+    <div class="min-w-0 min-h-0 max-w-prose w-full">
+      {{ .Content }}
+    </div>
+  </section>
+
+  {{ if gt (len $pages) 0 }}
+    <section class="space-y-10 w-full">
+      {{ range (.Paginate ($pages.GroupByDate "2006")).PageGroups }}
+        <h2 class="mt-12 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300">
+          {{ .Key }}
+        </h2>
+        {{ range .Pages }}
+          {{ partial "article-link/simple.html" . }}
         {{ end }}
-      </section>
-    {{ else }}
-      <section class="mt-10 prose dark:prose-invert">
-        <p class="py-8 border-t">
-          <em>{{ i18n "list.no_articles" | emojify }}</em>
-        </p>
-      </section>
-    {{ end }}
-  </article>
+      {{ end }}
+    </section>
+  {{ else }}
+    <section class="mt-10 prose dark:prose-invert">
+      <p class="py-8 border-t">
+        <em>{{ i18n "list.no_articles" | emojify }}</em>
+      </p>
+    </section>
+  {{ end }}
 
   {{ partial "pagination.html" . }}
 {{ end }}

@@ -31,7 +31,7 @@ defaultSocialImage = "/images/sakura-night.jpeg" # used as default for social me
 hotlinkFeatureImage = false
 # imagePosition = "50% 50%"
 
-# highlightCurrentMenuArea = true
+highlightCurrentMenuArea = true
 smartTOC = true
 smartTOCHideUnfocusedChildren = true
 
@@ -44,20 +44,20 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
 [footer]
-  showMenu = false
+  showMenu = true
   showCopyright = true
   showThemeAttribution = false
   showAppearanceSwitcher = true
   showScrollToTop = true
 
 [homepage]
-  layout = "background" # valid options: page, profile, hero, card, background, custom
+  layout = "profile" # valid options: page, profile, hero, card, background, custom
   homepageImage = "images/sakura-night.jpeg" # used in: hero, and card
   showRecent = true
-  showRecentItems = 5
-  showMoreLink = true
+  showRecentItems = 6
+  showMoreLink = false
   showMoreLinkDest = "/posts/"
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = true # only used when layout equals background
   disableHeroImageFilter = false # only used when layout equals hero
@@ -101,14 +101,14 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
-  showSummary = false
+  showSummary = true
   showViews = false
   showLikes = false
   showTableOfContents = false
   showCards = false
   orderByWeight = false
-  groupByYear = true
-  cardView = false
+  groupByYear = false
+  cardView = true
   cardViewScreenWidth = false
   constrainItemsWidth = false
 

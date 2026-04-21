@@ -14,8 +14,8 @@ title = "Yuki Matsuda | Portfolio & Blog"
 [params.author]
   name = "Yuki Matsuda"
   image = "images/yuki-matsuda.jpeg"
-  headline = "学生バックエンドエンジニア。個人開発、公開メモ、技術記事を継続的に積み上げるポートフォリオ兼ブログ"
-  bio = "INIAD / Tokyo。バックエンド寄りの個人開発と運用メモを続けています。技術記事は Zenn、AI を使った試行や個人的な公開メモはこのサイトに整理しています。"
+  headline = "Go / Nix / 個人開発を軸に、実装と運用を積み上げている学生バックエンドエンジニア"
+  bio = "INIAD / Tokyo。Go、Nix、個人サーバー運用、静的サイト構築まわりを継続的に試しています。GitHub の制作物と Zenn の技術記事を、このサイトから追えるように整理しています。"
   links = [
     { globe = "https://tenelol.dev" },
     { github = "https://github.com/tenelol" },

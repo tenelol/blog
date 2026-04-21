@@ -1,0 +1,45 @@
+.portfolio-hero__media {
+  isolation: isolate;
+}
+
+.portfolio-hero__image {
+  position: absolute;
+  inset: 0;
+}
+
+.portfolio-hero__image--blurred {
+  filter: blur(24px) saturate(0.95);
+  transform: scale(1.06);
+  opacity: 0.95;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 52%,
+    rgba(0, 0, 0, 0.2) 68%,
+    rgba(0, 0, 0, 0.78) 84%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 52%,
+    rgba(0, 0, 0, 0.2) 68%,
+    rgba(0, 0, 0, 0.78) 84%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.portfolio-hero__tone {
+  z-index: 2;
+}
+
+.portfolio-hero > .relative {
+  z-index: 3;
+}
+
+@media (max-width: 640px) {
+  .portfolio-hero__image--blurred {
+    filter: blur(18px) saturate(0.95);
+    transform: scale(1.04);
+  }
+}

@@ -55,6 +55,11 @@ fi
 
 cd "$repo_root"
 
+if command -v blowfish-tools >/dev/null 2>&1; then
+  blowfish-tools "$@"
+  exit $?
+fi
+
 if [[ "${1:-}" == "config" ]]; then
   shift
   nix shell nixpkgs#hugo -c npx blowfish-tools "$@"

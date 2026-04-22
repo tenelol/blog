@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "blowfish-tools": "^1.13.1"
+  },
+  "_npx": {
+    "packages": [
+      "blowfish-tools"
+    ]
+  }
+}

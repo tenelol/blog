@@ -1,0 +1,23 @@
+0 verbose cli /nix/store/z05gk72w5i2d4as6kdx338q4c1jy5y1f-nodejs-slim-24.14.0/bin/node /nix/store/l70qcnjd43qgk91554kmvszb7dpljqsa-nodejs-slim-24.14.0-npm/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@11.9.0
+2 info using node@v24.14.0
+3 silly config load:file:/nix/store/l70qcnjd43qgk91554kmvszb7dpljqsa-nodejs-slim-24.14.0-npm/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/tener/project/blog/.npmrc
+5 silly config load:file:/Users/tener/.npmrc
+6 silly config load:file:/nix/store/z05gk72w5i2d4as6kdx338q4c1jy5y1f-nodejs-slim-24.14.0/etc/npmrc
+7 verbose title npm exec blowfish-tools --help
+8 verbose argv "exec" "--yes" "--" "blowfish-tools" "--help"
+9 verbose logfile logs-max:10 dir:/Users/tener/project/blog/.npm-cache/_logs/2026-04-22T01_47_59_653Z-
+10 verbose logfile /Users/tener/project/blog/.npm-cache/_logs/2026-04-22T01_47_59_653Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 http fetch GET 200 https://registry.npmjs.org/blowfish-tools 104ms (cache revalidated)
+14 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+15 verbose Could not read global path /nix/store/z05gk72w5i2d4as6kdx338q4c1jy5y1f-nodejs-slim-24.14.0/lib, ignoring
+16 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+17 verbose cwd /Users/tener/project/blog
+18 verbose os Darwin 25.4.0
+19 verbose node v24.14.0
+20 verbose npm  v11.9.0
+21 verbose exit 0
+22 info ok

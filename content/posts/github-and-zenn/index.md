@@ -1,9 +1,9 @@
 +++
-title = "GitHub と Zenn を起点に、このブログで書いていくこと"
+title = "Zenn とこのブログの使い分け"
 date = 2026-04-21T14:30:00+09:00
 draft = false
-summary = "GitHub の個人開発と Zenn の技術記事を、このブログでどう扱っていくかを整理したメモ。"
-tags = ["GitHub", "Zenn", "NixOS", "Blog"]
+summary = "まとまった技術記事は Zenn、試行錯誤や判断のログはこのブログに置く方針を整理したメモ。"
+tags = ["Zenn", "NixOS", "Blog"]
 categories = ["Site"]
 +++
 
@@ -11,27 +11,25 @@ categories = ["Site"]
 
 このサイトは、公開メモと技術記事への導線を無理なくまとめるために作っています。
 
-最初から全部の方向性を固めるより、すでに公開している GitHub と Zenn を起点にした方が、何を書き残したいかがぶれにくいと考えました。
+最初から全部の方向性を固めるより、Zenn とこのブログの役割を分けた方が、何を書き残すかがぶれにくいと考えました。
 
-## GitHub で見せたいもの
+## Zenn に置くもの
 
-- [Nixar](https://github.com/tenelol/Nixar) は `Go` と `Nix` を組み合わせた最小構成の Web フレームワークです。
-- [iniad-gdrive](https://github.com/tenelol/iniad-gdrive) は INIAD 向けの Google Drive import ラッパーです。
-- [.dotfiles](https://github.com/tenelol/.dotfiles) では `denix` ベースの環境管理を続けています。
+- 手順や結論がまとまった技術記事
+- 他の人が同じ構成を再現しやすい内容
+- ある程度読み物として整えた NixOS やサーバー運用の記事
 
-コードとして見せたいものは GitHub に寄せ、このブログでは作る過程、詰まった点、運用の判断を記録していきます。
-
-## Zenn で書いているもの
+代表例:
 
 - [NixOSをCloudflare Tunnel経由でサーバー化した話](https://zenn.dev/tenelol/articles/417a294de03c5c)
 - [NixOSをTailscale経由でリモートデプロイ可能にした話](https://zenn.dev/tenelol/articles/91672b444d6547)
 
 いま公開している記事は、個人サーバー運用やリモートデプロイのような、実際に手を動かして詰まったことをまとめた内容が中心です。自分で書いた技術記事は今後も Zenn に寄せる方針にしています。
 
-## このサイトで書くもの
+## このブログに置くもの
 
 - AI を使った試行
-- 個人的な制作記録
+- 個人的な運用メモ
 - 技術記事にする前段階の設計メモ
 
 このブログ側は、技術記事の完成版というより、思考や試行の流れが見える場所として育てていきます。
@@ -39,5 +37,5 @@ categories = ["Site"]
 ## このブログで増やすもの
 
 - Zenn より短い設計メモ、AI 活用メモ、個人的な記録を積み上げる
-- GitHub や Zenn に分かれている活動を、記事の文脈から追えるようにする
+- Zenn に出す前の試行錯誤を、記事の文脈から追えるようにする
 - 後から読み返して判断の背景が分かるメモを残す

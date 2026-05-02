@@ -3,15 +3,19 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    hugo-nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
   };
 
   outputs =
-    { self, nixpkgs }:
+    {
+      self,
+      nixpkgs,
+      hugo-nixpkgs,
+    }:
     let
       systems = [
         "x86_64-linux"
         "aarch64-linux"
-        "x86_64-darwin"
         "aarch64-darwin"
       ];
       forAllSystems = f:
@@ -19,12 +23,13 @@
           system:
           f {
             pkgs = import nixpkgs { inherit system; };
+            hugoPkgs = import hugo-nixpkgs { inherit system; };
           }
         );
     in
     {
       packages = forAllSystems (
-        { pkgs }:
+        { pkgs, ... }:
         let
           blowfish-tools-real = pkgs.writeShellApplication {
             name = "blowfish-tools-real";
@@ -50,14 +55,14 @@
       );
 
       devShells = forAllSystems (
-        { pkgs }:
+        { pkgs, hugoPkgs }:
         let
           blowfish-tools = self.packages.${pkgs.stdenv.hostPlatform.system}.default;
         in
         {
           default = pkgs.mkShell {
             packages = [
-              pkgs.hugo
+              hugoPkgs.hugo
               pkgs.nodejs
               blowfish-tools
             ];

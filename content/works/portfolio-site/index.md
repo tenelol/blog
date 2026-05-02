@@ -1,7 +1,7 @@
 +++
 title = "Portfolio & Blog Site"
 date = 2026-04-18T00:00:00+09:00
-draft = false
+draft = true
 description = "夜桜の写真をキービジュアルに、Hugo と Blowfish で構成したポートフォリオ兼ブログサイト。"
 summary = "夜桜の写真をキービジュアルに、制作実績とブログを同じ導線で見せるための Hugo x Blowfish サイト。"
 tags = ["Hugo", "Portfolio", "Design"]

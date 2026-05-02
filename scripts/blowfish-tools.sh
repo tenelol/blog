@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+repo_root="${BLOG_REPO_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
 config_dir="$repo_root/config/_default"
 
 ja_language="$config_dir/languages.ja.toml"
@@ -55,15 +55,9 @@ fi
 
 cd "$repo_root"
 
-if command -v blowfish-tools >/dev/null 2>&1; then
-  blowfish-tools "$@"
+if command -v blowfish-tools-real >/dev/null 2>&1; then
+  blowfish-tools-real "$@"
   exit $?
 fi
 
-if [[ "${1:-}" == "config" ]]; then
-  shift
-  nix shell nixpkgs#hugo -c npx blowfish-tools "$@"
-  exit $?
-fi
-
-nix shell nixpkgs#hugo -c npx blowfish-tools "$@"
+nix shell nixpkgs#hugo -c npx --yes blowfish-tools "$@"

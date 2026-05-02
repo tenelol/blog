@@ -26,11 +26,21 @@
       packages = forAllSystems (
         { pkgs }:
         let
-          blowfish-tools = pkgs.writeShellApplication {
-            name = "blowfish-tools";
+          blowfish-tools-real = pkgs.writeShellApplication {
+            name = "blowfish-tools-real";
             runtimeInputs = [ pkgs.nodejs ];
             text = ''
               exec npx --yes blowfish-tools "$@"
+            '';
+          };
+          blowfish-tools = pkgs.writeShellApplication {
+            name = "blowfish-tools";
+            runtimeInputs = [
+              pkgs.bash
+              blowfish-tools-real
+            ];
+            text = ''
+              exec env BLOG_REPO_ROOT="$PWD" ${./scripts/blowfish-tools.sh} "$@"
             '';
           };
         in

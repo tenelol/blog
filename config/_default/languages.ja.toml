@@ -2,22 +2,26 @@ disabled = false
 languageCode = "ja-JP"
 languageName = "日本語"
 weight = 1
-title = "Yuki Matsuda | Portfolio & Blog"
+title = "Yuki Matsuda Blog"
 
 [params]
-  displayName = "JA"
-  isoCode = "ja"
-  rtl = false
-  dateFormat = "2006-01-02"
-  description = "学生バックエンドエンジニア Yuki Matsuda の、個人開発・公開メモ・Zenn 技術記事をまとめたポートフォリオ兼ブログ"
+displayName = "JA"
+isoCode = "ja"
+rtl = false
+dateFormat = "2006-01-02"
+description = "学生バックエンドエンジニア Yuki Matsuda の、公開メモ・設計メモ・Zenn 技術記事をまとめた個人ブログ"
 
-[params.author]
+  [params.author]
   name = "Yuki Matsuda"
   image = "images/yuki-matsuda.jpeg"
-  headline = "学生バックエンドエンジニア。個人開発、公開メモ、技術記事を継続的に積み上げるポートフォリオ兼ブログ"
-  bio = "INIAD / Tokyo。バックエンド寄りの個人開発と運用メモを続けています。技術記事は Zenn、AI を使った試行や個人的な公開メモはこのサイトに整理しています。"
-  links = [
-    { globe = "https://tenelol.dev" },
-    { github = "https://github.com/tenelol" },
-    { x-twitter = "https://x.com/tenelol" },
-  ]
+  headline = "Backend / Nix / 公開メモ。試行と技術記事を残す個人ブログ。"
+  bio = "INIAD / Tokyo。バックエンド寄りの個人開発、NixOS 運用、静的サイト改善を続けています。技術記事は Zenn、試行や公開メモはこのブログに整理しています。"
+
+    [[params.author.links]]
+    globe = "https://tenelol.dev"
+
+    [[params.author.links]]
+    github = "https://github.com/tenelol"
+
+    [[params.author.links]]
+    x-twitter = "https://x.com/tenelol"

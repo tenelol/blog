@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@github/copilot-language-server": "^1.473.0"
+  },
+  "_npx": {
+    "packages": [
+      "@github/copilot-language-server@^1.408.0"
+    ]
+  }
+}

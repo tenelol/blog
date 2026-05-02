@@ -15,7 +15,7 @@ NixOS、個人サーバー運用、AI を使った試行、静的サイト運用
 
 ## Links
 
-- [Website](https://tenelol.dev)
+- [Website](https://me.tenelol.dev)
 - [GitHub](https://github.com/tenelol)
 - [Zenn](https://zenn.dev/tenelol)
 - [Qiita](https://qiita.com/tenelol)

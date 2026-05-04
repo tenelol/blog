@@ -203,6 +203,20 @@ html:not(.dark) .prose :where(code:not(pre code)):not(:where([class~="not-prose"
   );
 }
 
+.blog-background-image {
+  object-position: center center;
+}
+
+@media (max-width: 640px) {
+  .blog-background-image {
+    object-position: 50% 50%;
+  }
+
+  #background-image.blog-background-image {
+    min-height: 100svh;
+  }
+}
+
 @media (min-width: 1024px) {
   article section.prose > .order-first {
     flex: 0 0 19rem;

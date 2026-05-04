@@ -9,13 +9,13 @@ displayName = "JA"
 isoCode = "ja"
 rtl = false
 dateFormat = "2006-01-02"
-description = "Yuki Matsuda の NixOS・個人サーバー・AI 活用・静的サイト運用の公開メモを置く個人ブログ"
+description = "Yuki Matsuda の個人サーバー・AI 活用・日々の試行錯誤を置く個人ブログ"
 
   [params.author]
   name = "Yuki Matsuda"
   image = "images/yuki-matsuda.jpeg"
-  headline = "NixOS / 個人サーバー / AI 活用の公開メモ。"
-  bio = "NixOS や個人サーバー運用、AI を使った試行のメモを残しています。完成した技術記事は Zenn、日々の判断や試行はこのブログに整理します。"
+  headline = "個人サーバー / AI 活用 / 日々の試行錯誤。"
+  bio = "個人サーバー運用や AI を使った試行、日々の判断のメモを残しています。まとまった技術記事は Zenn、個人的な記録はこのブログに整理します。"
 
     [[params.author.links]]
     globe = "https://me.tenelol.dev"

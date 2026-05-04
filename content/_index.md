@@ -1,5 +1,5 @@
 +++
-title = "Yuki Matsuda Blog"
+title = "てねろ Blog"
 +++
 
 個人サーバー運用、AI を使った試行、日々の試行錯誤を、後から読み返せる形で残しています。

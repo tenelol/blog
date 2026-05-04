@@ -2,18 +2,18 @@ disabled = false
 languageCode = "ja-JP"
 languageName = "日本語"
 weight = 1
-title = "Yuki Matsuda Blog"
+title = "てねろ Blog"
 
 [params]
 displayName = "JA"
 isoCode = "ja"
 rtl = false
 dateFormat = "2006-01-02"
-description = "Yuki Matsuda の個人サーバー・AI 活用・日々の試行錯誤を置く個人ブログ"
+description = "てねろの個人サーバー・AI 活用・日々の試行錯誤を置く個人ブログ"
 
   [params.author]
-  name = "Yuki Matsuda"
-  image = "images/yuki-matsuda.jpeg"
+  name = "てねろ"
+  image = "images/tenero-icon.png"
   headline = "個人サーバー / AI 活用 / 日々の試行錯誤。"
   bio = "個人サーバー運用や AI を使った試行、日々の判断のメモを残しています。まとまった技術記事は Zenn、個人的な記録はこのブログに整理します。"
 

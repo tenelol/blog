@@ -1,7 +1,7 @@
 colorScheme = "noir"
 defaultAppearance = "dark"
-autoSwitchAppearance = true
-enableA11y = true
+autoSwitchAppearance = false
+enableA11y = false
 enableSearch = true
 enableCodeCopy = true
 enableStructuredBreadcrumbs = false
@@ -35,7 +35,7 @@ layout = "fixed"
 showMenu = false
 showCopyright = true
 showThemeAttribution = false
-showAppearanceSwitcher = true
+showAppearanceSwitcher = false
 showScrollToTop = true
 
 [homepage]

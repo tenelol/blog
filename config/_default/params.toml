@@ -10,9 +10,9 @@ mainSections = [ "posts" ]
 disableImageOptimization = false
 disableImageOptimizationMD = false
 disableTextInHeader = false
-defaultBackgroundImage = "images/sakura-night.jpeg"
-defaultFeaturedImage = "/images/sakura-night.jpeg"
-defaultSocialImage = "/images/sakura-night.jpeg"
+defaultBackgroundImage = "images/urban-evening-background.png"
+defaultFeaturedImage = "/images/urban-evening-background.png"
+defaultSocialImage = "/images/urban-evening-background.png"
 hotlinkFeatureImage = false
 smartTOC = true
 smartTOCHideUnfocusedChildren = true
@@ -40,7 +40,7 @@ showScrollToTop = true
 
 [homepage]
 layout = "background"
-homepageImage = "images/sakura-night.jpeg"
+homepageImage = "images/urban-evening-background.png"
 showRecent = true
 showRecentItems = 7
 showMoreLink = true

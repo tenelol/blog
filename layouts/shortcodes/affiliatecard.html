@@ -1,0 +1,18 @@
+{{- $href := .Get "href" | default (.Get 0) -}}
+{{- $title := .Get "title" | default (.Get 1) | default "リンク先を見る" -}}
+{{- $description := .Get "description" | default (.Get "desc") -}}
+{{- $provider := .Get "provider" -}}
+{{- $cta := .Get "cta" | default "見てみる" -}}
+{{- if not $href -}}
+  {{- errorf "affiliatecard shortcode requires href: %s" .Position -}}
+{{- end -}}
+<aside class="affiliate-card not-prose">
+  <div class="affiliate-card__body">
+    <div>
+      <p class="affiliate-card__eyebrow">広告リンク{{ with $provider }} / {{ . }}{{ end }}</p>
+      <p class="affiliate-card__title">{{ $title }}</p>
+      {{ with $description }}<p class="affiliate-card__description">{{ . }}</p>{{ end }}
+    </div>
+    <a class="affiliate-card__button" href="{{ $href | safeURL }}" target="_blank" rel="sponsored noopener noreferrer">{{ $cta }}</a>
+  </div>
+</aside>

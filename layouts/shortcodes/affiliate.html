@@ -1,0 +1,7 @@
+{{- $href := .Get "href" | default (.Get 0) -}}
+{{- $text := .Get "text" | default (.Get 1) | default $href -}}
+{{- $label := .Get "label" | default "広告" -}}
+{{- if not $href -}}
+  {{- errorf "affiliate shortcode requires href: %s" .Position -}}
+{{- end -}}
+<a class="affiliate-link" href="{{ $href | safeURL }}" target="_blank" rel="sponsored noopener noreferrer">{{ $text }}</a><span class="affiliate-link-label">{{ $label }}</span>

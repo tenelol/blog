@@ -1,0 +1,5 @@
+{{- $text := .Get "text" | default "この記事には広告リンクが含まれます。リンク先で購入・契約すると、運営者に報酬が発生する場合があります。" -}}
+<aside class="affiliate-disclosure not-prose" role="note">
+  <span class="affiliate-disclosure__label">広告</span>
+  <span>{{ $text }}</span>
+</aside>

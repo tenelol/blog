@@ -17,3 +17,8 @@
   name = "Tags"
   pageRef = "/tags"
   weight = 40
+
+[[footer]]
+  name = "広告掲載・AI利用について"
+  pageRef = "/disclosure"
+  weight = 10

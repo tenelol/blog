@@ -32,7 +32,7 @@ advertisement = { }
 layout = "fixed"
 
 [footer]
-showMenu = false
+showMenu = true
 showCopyright = true
 showThemeAttribution = false
 showAppearanceSwitcher = false

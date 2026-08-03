@@ -1,0 +1,46 @@
+<script>
+  (function () {
+    function sendAffiliateEvent(link) {
+      var payload = {
+        label: link.dataset.monetizationTitle || link.textContent.trim(),
+        provider: link.dataset.monetizationProvider || "",
+        placement: link.dataset.monetizationPlacement || "",
+        href: link.href,
+        path: window.location.pathname
+      };
+
+      if (window.umami && typeof window.umami.track === "function") {
+        window.umami.track("affiliate_click", payload);
+      }
+
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "affiliate_click", {
+          event_category: "monetization",
+          event_label: payload.label,
+          affiliate_provider: payload.provider,
+          affiliate_placement: payload.placement,
+          link_url: payload.href,
+          page_path: payload.path
+        });
+      }
+
+      if (window.fathom && typeof window.fathom.trackEvent === "function") {
+        window.fathom.trackEvent("affiliate_click:" + payload.label);
+      }
+    }
+
+    document.addEventListener(
+      "click",
+      function (event) {
+        var target = event.target;
+        if (!target || typeof target.closest !== "function") return;
+
+        var link = target.closest("a[data-monetization-link]");
+        if (!link) return;
+
+        sendAffiliateEvent(link);
+      },
+      true
+    );
+  })();
+</script>

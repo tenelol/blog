@@ -9,14 +9,34 @@
   weight = 20
 
 [[main]]
+  name = "Topics"
+  pageRef = "/topics"
+  weight = 25
+
+[[main]]
   name = "About"
   pageRef = "/about"
   weight = 30
 
 [[main]]
+  name = "Uses"
+  pageRef = "/uses"
+  weight = 35
+
+[[main]]
   name = "Tags"
   pageRef = "/tags"
   weight = 40
+
+[[footer]]
+  name = "使っているもの"
+  pageRef = "/uses"
+  weight = 5
+
+[[footer]]
+  name = "トピック"
+  pageRef = "/topics"
+  weight = 8
 
 [[footer]]
   name = "広告掲載・AI利用について"

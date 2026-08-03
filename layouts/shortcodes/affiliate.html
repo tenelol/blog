@@ -1,7 +1,17 @@
 {{- $href := .Get "href" | default (.Get 0) -}}
 {{- $text := .Get "text" | default (.Get 1) | default $href -}}
 {{- $label := .Get "label" | default "広告" -}}
+{{- $provider := .Get "provider" | default $label -}}
+{{- $placement := .Get "placement" | default .Page.RelPermalink -}}
 {{- if not $href -}}
   {{- errorf "affiliate shortcode requires href: %s" .Position -}}
 {{- end -}}
-<a class="affiliate-link" href="{{ $href | safeURL }}" target="_blank" rel="sponsored noopener noreferrer">{{ $text }}</a><span class="affiliate-link-label">{{ $label }}</span>
+<a
+  class="affiliate-link"
+  href="{{ $href | safeURL }}"
+  target="_blank"
+  rel="sponsored noopener noreferrer"
+  data-monetization-link="affiliate"
+  data-monetization-provider="{{ $provider }}"
+  data-monetization-title="{{ $text }}"
+  data-monetization-placement="{{ $placement }}">{{ $text }}</a><span class="affiliate-link-label">{{ $label }}</span>

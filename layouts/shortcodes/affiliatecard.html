@@ -3,6 +3,7 @@
 {{- $description := .Get "description" | default (.Get "desc") -}}
 {{- $provider := .Get "provider" -}}
 {{- $cta := .Get "cta" | default "見てみる" -}}
+{{- $placement := .Get "placement" | default .Page.RelPermalink -}}
 {{- if not $href -}}
   {{- errorf "affiliatecard shortcode requires href: %s" .Position -}}
 {{- end -}}
@@ -13,6 +14,14 @@
       <p class="affiliate-card__title">{{ $title }}</p>
       {{ with $description }}<p class="affiliate-card__description">{{ . }}</p>{{ end }}
     </div>
-    <a class="affiliate-card__button" href="{{ $href | safeURL }}" target="_blank" rel="sponsored noopener noreferrer">{{ $cta }}</a>
+    <a
+      class="affiliate-card__button"
+      href="{{ $href | safeURL }}"
+      target="_blank"
+      rel="sponsored noopener noreferrer"
+      data-monetization-link="affiliate"
+      data-monetization-provider="{{ $provider | default "affiliate" }}"
+      data-monetization-title="{{ $title }}"
+      data-monetization-placement="{{ $placement }}">{{ $cta }}</a>
   </div>
 </aside>

@@ -1,46 +1,57 @@
 +++
 title = "使っているもの"
 date = 2026-05-05T00:00:00+09:00
-draft = true
-description = "個人サーバー、AI 活用、ブログ運用で実際に使っているもののメモ。"
-summary = "個人サーバー、AI 活用、ブログ運用で実際に使っているもの。広告リンク導入用の下書き。"
+draft = false
+description = "開発環境やデスク環境で実際に使ったもの、触って判断材料にしたものをまとめるページ。"
+summary = "開発環境やデスク環境で実際に使ったもの、触って判断材料にしたもの。"
 tags = ["Uses", "Affiliate"]
-categories = ["Blog"]
+categories = ["Review"]
 +++
 
 {{< adnote >}}
 
-個人サーバー、AI 活用、ブログ運用で使っているものをまとめます。
+開発環境やデスク環境で実際に使ったもの、触って判断材料にしたものをまとめます。まだ数は絞っていますが、公開できる実リンクだけを置きます。
 
-## 個人サーバー・ネットワーク
+価格や在庫、型番ごとの仕様は変わるので、購入前にはリンク先の公式情報を確認してください。
 
-{{< affiliatecard
-  href="AFFILIATE_URL_HERE"
-  title="サービス名"
-  description="何に使っているか、良いところ、注意点を短く書く。"
-  provider="ASP名"
->}}
+## トラックボール
 
-## 開発環境・作業環境
+長時間コードを書くなら、最初に効きやすいのはキーボードよりポインティングデバイスだと思っています。自分はマウスからトラックボールに移って、手首を動かす量がかなり減りました。
+
+親指操作型は通常のマウスから移行しやすく、センターボール型は広い画面や細かい操作に向いています。
 
 {{< affiliatecard
-  href="AFFILIATE_URL_HERE"
-  title="商品名"
-  description="実際に使っている用途と、合わない人も書く。"
-  provider="楽天/Amazon など"
+  href="https://hb.afl.rakuten.co.jp/hgc/53768b74.d6f97622.53768b75.4a5bbc42/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flogicool%2Fmxtb2d%2F&link_type=hybrid_url"
+  title="Logicool MX ERGO S"
+  description="据え置きのメイン機として使いやすい親指操作型。角度調整とボタン数を重視する人向け。"
+  provider="楽天"
+  cta="楽天市場で見る"
 >}}
-
-## AI 活用
 
 {{< affiliatecard
-  href="AFFILIATE_URL_HERE"
-  title="ツール名"
-  description="どの作業に効いているか、無料枠や注意点を短く書く。"
-  provider="ASP名"
+  href="https://hb.afl.rakuten.co.jp/hgc/53768b74.d6f97622.53768b75.4a5bbc42/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flogicool%2Fm575spd%2F&link_type=hybrid_url"
+  title="Logicool ERGO M575SP"
+  description="最初の1台として試しやすい親指操作型。通常のマウスからの乗り換えやすさを重視する人向け。"
+  provider="楽天"
+  cta="楽天市場で見る"
 >}}
 
-## メモ
+{{< affiliatecard
+  href="https://hb.afl.rakuten.co.jp/hgc/53768b74.d6f97622.53768b75.4a5bbc42/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F4995364272933%2F&link_type=hybrid_url"
+  title="Kensington SlimBlade Pro"
+  description="大玉のセンターボール型。精密操作やログ読み、広い画面でのカーソル移動が多い人向け。"
+  provider="楽天"
+  cta="楽天市場で見る"
+>}}
 
-- 価格やキャンペーンは変わるので、本文では固定価格を断言しない。
-- 使っていないものは「おすすめ」と書かない。
-- 欠点や向かないケースも書く。
+{{< affiliatecard
+  href="https://hb.afl.rakuten.co.jp/hgc/53768b74.d6f97622.53768b75.4a5bbc42/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Felecom%2F4953103350137%2F&link_type=hybrid_url"
+  title="エレコム HUGE"
+  description="予算を抑えてセンターボール型を試したい人向け。サイズが大きいのでデスクの余裕は必要。"
+  provider="楽天"
+  cta="楽天市場で見る"
+>}}
+
+## 関連記事
+
+- [開発者がトラックボールに乗り換えるなら — 4製品を使い比べた所感](/posts/trackball-for-developers-2026/)

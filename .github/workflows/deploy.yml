@@ -40,7 +40,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: site
-          path: dist/
+          path: ${{ runner.temp }}/site-${{ github.run_id }}-${{ github.run_attempt }}
       - run: |
           mkdir -p /var/www/hmp/current
-          rsync -a --delete dist/ /var/www/hmp/current/
+          rsync -a --delete "$RUNNER_TEMP/site-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT/" /var/www/hmp/current/

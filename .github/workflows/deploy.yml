@@ -1,0 +1,46 @@
+name: CI/CD
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 12.4.1
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'push'
+        with:
+          name: site
+          path: dist/
+          if-no-files-found: error
+
+  deploy:
+    if: github.event_name == 'push'
+    needs: build
+    runs-on: [self-hosted, linux, x64, blog-deploy]
+    concurrency:
+      group: blog-production
+      cancel-in-progress: false
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: dist/
+      - run: |
+          mkdir -p /var/www/hmp/current
+          rsync -a --delete dist/ /var/www/hmp/current/
